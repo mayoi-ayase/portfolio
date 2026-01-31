@@ -1,0 +1,63 @@
+@use "../abstracts/variables" as *; 
+
+.serviceGallery {
+    button.react-photo-album--photo  {
+    border-radius:1rem;
+    position:relative;
+    overflow: hidden;
+    height:fit-content;
+    width:fit-content;
+}
+
+.react-photo-album--track {
+    gap:10px;
+}
+
+img.react-photo-album--image {
+    border-radius:1rem;
+    width: auto;
+    height: 250px; // needed to maintain flex
+    overflow:hidden; 
+    transition: 300ms ease;
+
+    
+    &:hover {
+        transform:scale(105%);
+        transition: 300ms ease;
+    }
+}
+
+
+.fullbody button img.react-photo-album--image {
+    height:300px;
+}
+}
+
+// * ART PORTFOLIO PAGE GALLERY
+
+.portfolio-gallery {
+
+    button.react-photo-album--photo  {
+    
+    border-radius:0;
+    position:relative;
+    overflow: hidden;
+    height:fit-content;
+    width:fit-content;
+}
+
+
+    img.react-photo-album--image {
+    border-radius:0;
+    overflow:hidden; 
+    transition: 300ms ease;
+
+    
+    &:hover {
+        transform:scale(105%);
+        transition: 300ms ease;
+    }
+    
+}
+}
+

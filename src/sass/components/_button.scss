@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as *; 
+
+.button {
+    background-color: $secondary;
+    display: inline-block;
+    padding:20px;
+    border-radius:1rem;
+    transition: 300ms ease;
+    text-decoration:none;
+
+    * {
+        text-decoration:none;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        transition: 300ms ease;
+        cursor:pointer;
+    }
+}
+
+.modal-btn {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.art-btn {
+    background-color: $primary;
+    outline: 2px solid $secondary;
+}
+
+.disclaimer {
+    font-size: 1.2rem;
+    p {
+        margin: 10px 0;
+    }
+}

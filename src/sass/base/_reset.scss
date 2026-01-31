@@ -1,0 +1,67 @@
+@use "../abstracts/variables" as *; 
+
+// resets
+
+// :root {
+//   --toastify-color-light: #f5f5f5;
+//   --toastify-color-dark: #1f1f22;
+//   --toastify-color-info: #93b8ce;
+//   --toastify-color-success: #38a377;
+//   --toastify-color-warning: #f7c57a;
+//   --toastify-color-error: #923449;
+//   --toastify-color-transparent: rgba(218, 187, 193, 0.6);
+//   --toastify-font-family: "Delius", sans-serif;
+// }
+
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $primary;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, div {
+  margin: 0;
+  padding: 0;
+  color: $light;
+}
+
+// h1 h2, h3, h4, h5, h6, p, ol, ul, span, div, th, td, tr {
+//   &:hover {
+//     cursor:default
+//   }
+//   & a:hover, a &:hover {
+//     cursor:pointer;
+//   }
+// }
+
+
+
+// a, Link {
+//   text-decoration: none;
+//   color: inherit;
+//   &:hover {
+//     cursor:pointer;
+//   }
+// }
+
+// ul, ol {
+//   list-style: none;
+// }
+
+// // webpage theming
+
+// body {
+//     background-color: var(--primary);
+//     background-image: var(--background-image);
+//     background-position:center;
+//     background-repeat:repeat;
+//     background-size: 50px;
+// }
+

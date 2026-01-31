@@ -1,0 +1,54 @@
+@use "../abstracts/variables" as *; 
+
+
+.video-section {
+    display:flex;
+    margin-bottom: 20px;
+    gap:20px;
+}
+
+.video-thumbnail {
+    width:40%;
+}
+
+.video-description {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    max-width:50%;
+    border-left: 5px solid $secondary;
+    padding: 0 10px;
+    p {
+        font-size:1.5rem;
+    }
+    .video-link {
+        text-decoration:none;
+        font-weight:bold;
+        color: $secondary;
+    }
+
+}    
+
+    .video-date {
+        color: $secondary;
+        font-size: 1.2rem;
+        padding:5px 0;
+        &:hover{
+            cursor:default;
+        }
+    }
+
+    .iframe-container {
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        height:100%;
+        
+    }
+
+    .gdrive-video {
+        width:100%;
+        height:auto;
+        aspect-ratio:16/9;
+        border:0;
+    }

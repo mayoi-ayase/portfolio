@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as *; 
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&family=Zen+Kaku+Gothic+New&display=swap');
+
+h1, h2, h3, h4, .title {
+    color: var(--secondary);
+    font-optical-sizing:none;
+    font-family: $bodoniModa;
+    font-weight:400;
+        &:hover {
+        cursor:default;
+    }
+    
+}
+
+p, li, a, input, select, h5, h6, div {
+    color: var(--secondary);
+    font-family: $bodyText;
+        &:hover {
+        cursor:default;
+    }
+        a:hover {
+            cursor:pointer;
+        }
+}
+
+h1 {
+    font-size:3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+

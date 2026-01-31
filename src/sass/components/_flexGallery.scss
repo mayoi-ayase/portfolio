@@ -1,0 +1,52 @@
+// * VOCAL SYNTH GALLERY
+
+.fuckmychunguslife:hover {
+    cursor:default;
+}
+
+.vsynthGallery {
+    gap:20px;
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    margin-bottom:10px;
+}
+
+.vsynthWrapper {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    .vsynthCaption {
+        padding-top:3px;
+        font-size: 0.8rem;
+        text-align:center;
+    }
+}
+
+    // image container
+    div.img-wrapper  {
+    border-radius:1rem;
+    position:relative;
+    overflow: hidden;
+    height:fit-content;
+    width:fit-content;
+    height:120px;
+}
+
+
+
+// 
+img.vsynthImage {
+    border-radius:1rem;
+    width: auto;
+    height: 120px; // needed to maintain flex
+    overflow:hidden; 
+    transition: 300ms ease;
+    
+    &:hover {
+        transform:scale(105%);
+        transition: 300ms ease;
+    }
+}
+

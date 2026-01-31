@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as *; 
+
+.customOverlay {
+  backdrop-filter: blur(25px);
+  background-color: #2a233693;
+}
+.customModal {
+  padding:2rem;
+  background: $primary;
+  width: 100%;
+  &:focus {
+    outline:none;
+  }
+}
+
+.react-responsive-modal-closeButton, .react-responsive-modal-closeButton svg {
+    color: $secondary;
+    border-color: $secondary;
+    fill: $secondary;
+}
