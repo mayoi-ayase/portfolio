@@ -11,6 +11,10 @@
 
 .react-photo-album--track {
     gap:10px;
+        @media (max-width:768px) {
+            flex-wrap:wrap;
+            justify-content:center;
+    }
 }
 
 img.react-photo-album--image {
@@ -25,7 +29,12 @@ img.react-photo-album--image {
         transform:scale(105%);
         transition: 300ms ease;
     }
+
+        @media (max-width: 768px) {
+            flex-wrap:wrap;
+        }
 }
+
 
 
 .fullbody button img.react-photo-album--image {

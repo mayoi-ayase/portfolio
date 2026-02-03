@@ -169,15 +169,22 @@ function Art({ open, setOpen }) {
             <Link to="/">return to the home page.</Link>
           </p>
         </div>
-        <Link className="modal-btn button" onClick={() => setOpen(true)} to="/">
-          Back to Home
-        </Link>
 
-        <div
-          className="modal-btn button art-btn"
-          onClick={() => setOpen(false)}
-        >
-          View Art
+        <div className="buttonWrapper">
+          <Link
+            className="modal-btn button"
+            onClick={() => setOpen(true)}
+            to="/"
+          >
+            Back to Home
+          </Link>
+
+          <div
+            className="modal-btn button art-btn"
+            onClick={() => setOpen(false)}
+          >
+            View Art
+          </div>
         </div>
         {/*  */}
       </Modal>

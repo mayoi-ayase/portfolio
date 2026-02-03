@@ -5,18 +5,32 @@
     width:100vw;
     height:100vh;
     justify-content:flex-start;
+        @media (max-width: 768px) {
+         flex-direction:column;
+        }
     
 }
 
 .sidebar {
     background-color: $primaryDark;
-    width:19%;
+    width:20%;
     height:100%;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items: center;
+
+     @media (max-width: 1599px) {
+         width:30%;
+        }
+
+        @media (max-width: 768px) {
+         width:100%;
+         padding-bottom:20px;
+         height:auto;
+        }
 }
+
 
 .home-content {
     padding:2rem;

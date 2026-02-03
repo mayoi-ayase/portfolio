@@ -6,6 +6,14 @@
     color: $light;
     text-align:left;
     font-size: 2.75rem;
+    @media (max-width: 1279px) {
+        font-size:2rem;
+    }
+    @media (max-width: 768px) {
+        font-size:1.5rem;
+        margin:auto;
+        text-align:center;
+    }
 }
 
 .title-container {
@@ -15,12 +23,21 @@
     a {
         text-decoration:none;
     }
+
+    @media (max-width: 768px) {
+        margin: 0;
+        margin-top:20px;
+    }
 }
 
 nav.menu {
 float: none;
 clear: both;
 width: 85%;
+    @media (max-width: 768px) {
+        width:100%;
+        max-height:fit-content;
+    }
 }
 
 nav.menu ul {
@@ -32,6 +49,12 @@ padding: 0px;
 nav.menu li{
 float: none;
 width: 100%;
+    @media (max-width: 768px) {
+        width:auto;
+        display:inline-block;
+        text-align:center;
+        margin:auto;
+    }
 }
 
 nav.menu li a{
@@ -51,6 +74,22 @@ font-family: $bodoniModa;
 font-weight: 400;
 text-rendering: optimizeLegibility;
 font-optical-sizing:none; // keeps appearance the same as carrd font
+    @media (max-width: 1279px) {
+        font-size:1.5rem;
+    }
+      @media (max-width: 768px) {
+         font-size: 1rem;
+         padding:10px;
+         border:0px solid;
+        }
+}
+
+// this is such a mess im so sorry 
+.menu {
+    @media (max-width: 768px) {
+         text-align:center;
+         margin:0 auto;
+    }
 }
 
 nav.menu li a:hover{ border-bottom: 0px; color: $light;}
@@ -59,6 +98,15 @@ nav.menu li:nth-child(2) a{ border-left: 5px solid $secondary; }
 nav.menu li:nth-child(3) a{ border-left: 5px solid $secondary; }
 nav.menu li:nth-child(4) a{ border-left: 5px solid $secondary; }
 nav.menu li:last-child a{ border-left: 5px solid $secondary; }
+
+      @media (max-width: 768px) {
+nav.menu li a:hover{ border-bottom: 0px; color: $light;}
+nav.menu li:first-child a{ border-left: 0; border-bottom: 5px solid $secondary; }
+nav.menu li:nth-child(2) a{ border-left: 0; border-bottom: 5px solid $secondary; }
+nav.menu li:nth-child(3) a{ border-left: 0; border-bottom: 5px solid $secondary; }
+nav.menu li:nth-child(4) a{ border-left: 0;  border-bottom: 5px solid $secondary;}
+nav.menu li:last-child a{ border-left: 0; border-bottom: 5px solid $secondary; }
+        }
 
 nav.menu li a:after {
 content: "";

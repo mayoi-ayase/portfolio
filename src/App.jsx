@@ -8,7 +8,7 @@ import Art from "./Pages/Art";
 import Videos from "./Pages/Videos";
 import Vocals from "./Pages/Vocals";
 import Contact from "./Pages/Contact";
-import React, { useRef } from "react";
+import React from "react";
 
 function App() {
   const [open, setOpen] = React.useState(true);

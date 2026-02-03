@@ -17,12 +17,18 @@
         transition: 300ms ease;
         cursor:pointer;
     }
+
 }
 
 .modal-btn {
     font-size: 1.2rem;
     margin-right: 10px;
     margin-top: 10px;
+          @media (max-width: 768px) {
+        width:95%;
+        margin: auto;
+        text-align:center;
+      }
 }
 
 .art-btn {
@@ -36,3 +42,22 @@
         margin: 10px 0;
     }
 }
+
+.buttonWrapper {
+    display:flex;
+    flex-direction:row;
+}
+
+@media (max-width: 768px) {
+        
+.buttonWrapper {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    justify-content:center;
+    align-items:center;
+    button {
+        width: 95%
+    }
+}
+      }
