@@ -151,8 +151,8 @@ function Commissions() {
           <p>
             Specify bust or icon. <strong>Max 1 character per canvas.</strong>
           </p>
-          <p>1 character: US$15</p>
-          <p>Matching icons: US$25</p>
+          <p>1 character: US$20</p>
+          <p>Matching icons: US$30</p>
         </div>
       </div>
       {/* HEADSHOT END */}
@@ -169,8 +169,8 @@ function Commissions() {
           <p>
             <strong>Max 2 characters per canvas.</strong>
           </p>
-          <p>1 character: US$35</p>
-          <p>2 characters: US$50</p>
+          <p>1 character: US$40</p>
+          <p>2 characters: US$60</p>
         </div>
       </div>
       {/* HALFBODY END */}
